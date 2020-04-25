@@ -50,7 +50,7 @@ router.get("/adduser", async (req, res, next) => {
   });
 });
 
-// get request for report
+// post request for report
 router.post("/report", async (req, res, next) => {
   try {
     if(!req.body.gender)
