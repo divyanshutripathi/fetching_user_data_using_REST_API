@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "آنیتا",
+                "last": "جعفری"
+            },
+            "location": {
+                "street": {
+                    "number": 8936,
+                    "name": "حقانی"
+                },
+                "city": "ارومیه",
+                "state": "سمنان",
+                "country": "Iran",
+                "postcode": 10625,
+                "coordinates": {
+                    "latitude": "32.0308",
+                    "longitude": "175.4315"
+                },
+                "timezone": {
+                    "offset": "+1:00",
+                    "description": "Brussels, Copenhagen, Madrid, Paris"
+                }
+            },
+            "email": "anyt.jaafry@example.com",
+            "login": {
+                "uuid": "0027e316-06be-4906-ba5c-7a141cad8f3c",
+                "username": "silverladybug709",
+                "password": "facial",
+                "salt": "AT6JaxmP",
+                "md5": "cadc6b236babf8c1d1686ab5178e8a7b",
+                "sha1": "c144e5e2c2e6f2496e21b3d7ff9c11bf69ba9ede",
+                "sha256": "92e5deb78f1308643bdaed8438c5aaa866edd39bee015e156a33860dc2103afb"
+            },
+            "dob": {
+                "date": "1950-05-04T17:57:14.966Z",
+                "age": 70
+            },
+            "registered": {
+                "date": "2007-07-23T13:41:46.772Z",
+                "age": 13
+            },
+            "phone": "076-85927106",
+            "cell": "0971-700-4732",
+            "id": {
+                "name": "",
+                "value": null
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/11.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/11.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/11.jpg"
+            },
+            "nat": "IR"
+        }
+    ],
+    "info": {
+        "seed": "1d867f1557f0cf7c",
+        "results": 1,
+        "page": 1,
+        "version": "1.3"
+    }
+}
