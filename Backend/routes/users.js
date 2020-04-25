@@ -31,7 +31,6 @@ router.get("/adduser", async (req, res, next) => {
       try {
         await USER.addUser(user);
       } catch (err) {
-        console.log(err);
         res.json({
           success: false,
           msg: `error in insertion : ${err}`,
@@ -63,7 +62,6 @@ router.post("/report", async (req, res, next) => {
     const {body:{gender}} = req
     const report = [];
     const nationalities = await USER.distinctNationality();
-    console.log("nationalities : ",nationalities)
     const userDetails = await USER.getAllUsers();
     const mapper = async (nationality) => {
       let countForThirty = 0;
@@ -95,13 +93,11 @@ router.post("/report", async (req, res, next) => {
       );
     };
     await pMap(nationalities, mapper, { concurrency: 1 });
-    console.log("reports : ", report);
     res.json({
       success: true,
       msg: report,
     });
   } catch (err) {
-    console.log(err);
     res.json({
       success: false,
       msg: `error in fetching report : ${err}`,

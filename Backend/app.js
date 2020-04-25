@@ -4,7 +4,6 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
-const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
 var cors = require("cors");
 var bodyparser = require("body-parser");
@@ -13,7 +12,7 @@ var mongoose = require("mongoose");
 const app = express();
 require("dotenv").config();
 
-mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true });
+mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true, useUnifiedTopology: true });
 
 mongoose.connection.on("connect", () => {
   console.log("connected to the database");
@@ -32,7 +31,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/", indexRouter);
 app.use("/users", usersRouter);
 
 // catch 404 and forward to error handler
